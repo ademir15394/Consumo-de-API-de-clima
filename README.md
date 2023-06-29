@@ -12,4 +12,9 @@ Abra a pasta com o terminal ou prompt de comando ou powershell, **execute o segu
 
 ``npm run dev``
 
+## Projeto rodando na firebase
+
+
+[Projeto](https://hgweanther.web.app/) 
+
 ### O projeto ainda está em desenvolvimento
