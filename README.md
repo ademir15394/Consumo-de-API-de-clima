@@ -12,4 +12,4 @@ Abra a pasta com o terminal ou prompt de comando ou powershell, **execute o segu
 
 ``npm run dev``
 
-#### O projeto ainda não está em desenvolvimento
+### O projeto ainda está em desenvolvimento
