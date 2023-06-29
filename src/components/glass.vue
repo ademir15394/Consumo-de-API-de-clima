@@ -9,7 +9,21 @@
 
     </div>
     <div class="subsession">
+
       <h1 class="subtitle" v-if="describe">{{ describe.description }}</h1>
+
+    </div>
+
+
+    <div class="leftSession">
+
+      <ol class="listOne">
+
+        <li v-if="cidade">{{ cidade.city }}</li>
+        <li v-if="rain">Probabilidade de chuva: {{ rain.rain_probability }}%</li>
+
+      </ol>
+
     </div>
 
   </div>
@@ -26,7 +40,8 @@ export default {
         return{
             tempe: null,
             cidade: null,
-            describe: null
+            describe: null,
+            rain: null
         }
     },
 
@@ -37,11 +52,12 @@ export default {
 
         try{
             const key = "135efbc7";
-            const response =  await axios.get(`https://api.hgbrasil.com/weather?format=json-cors&key=${key}&lat=-&lon=-&user_ip=remote`)
+            const res =  await axios.get(`https://api.hgbrasil.com/weather?format=json-cors&key=${key}&lat=-&lon=-&user_ip=remote`)
 
-            this.tempe = response.data.results;
-            this.cidade = response.data.results;
-            this.describe = response.data.results;
+            this.tempe = res.data.results;
+            this.cidade = res.data.results;
+            this.describe = res.data.results;
+            this.rain = res.data.results;
 
         }catch(error) {
             console.log("Houve Erro na Aplicação" + error)
@@ -100,6 +116,18 @@ border-radius: 34px;
   font-size: 30px;
   color:#fff;
   font-weight: normal;
+}
+
+.listOne{
+  color: #fff;
+  font-size: 30px;
+}
+
+.leftSession{
+  display: flex;
+  justify-content: flex-start;
+  margin-top:110px;
+  margin-left:28px;
 }
 
 </style>

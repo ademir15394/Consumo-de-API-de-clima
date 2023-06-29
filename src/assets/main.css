@@ -18,6 +18,10 @@ h1,h2,h3{
   font-family: 'Quicksand', sans-serif;
 }
 
-p{
+ol{
+  list-style: none;
+}
+
+p,li{
   font-family: 'Quicksand', sans-serif;
 }
