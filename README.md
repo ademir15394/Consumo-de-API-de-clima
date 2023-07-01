@@ -17,4 +17,3 @@ Abra a pasta com o terminal ou prompt de comando ou powershell, **execute o segu
 
 [Projeto](https://hgweanther.web.app/) 
 
-### O projeto ainda está em desenvolvimento
