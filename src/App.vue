@@ -30,5 +30,12 @@ margin-top: 70px
 
 }
 
+@media (max-width: 500px){
+
+  .session{
+    margin-top:48px;
+  }
+
+}
 
 </style>
